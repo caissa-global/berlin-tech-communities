@@ -5,7 +5,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   text-align: center;
-  font-size: 2vw;
+  font-size: 1.3vw;
 }
 #header {
   background-image: url(https://images.unsplash.com/photo-1484689228555-fd6bc1b28b7e);
@@ -27,6 +27,42 @@ iframe {
 div {
   overflow: auto;
 }
+
+.tab {
+  overflow: auto;
+  display: inline;
+}
+
+.tab button {
+  clear: both;
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #00bfbf;
+  margin: 2px;
+  outline: none;
+  cursor: pointer;
+  padding: 0.8em;
+  transition: 0.3s;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.tab button:hover {
+  background-color: #2d2d2d;
+  border: 2px solid #00bfbf;
+}
+
+.tab button.active {
+  color: #00bfbf;
+  border: 2px solid #ead959;
+}
+
+.tabcontent {
+  display: none;
+  padding: 15px 10px 20px 10px;
+  border: none;
+}
+
 table {
   border: 1px solid #00bfbf;
   border-collapse: collapse;
@@ -34,10 +70,11 @@ table {
   font-family: 'Montserrat', sans-serif;
   text-align: left;
   margin-bottom: 15px;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 tr {
   border: 1px solid #00bfbf;
+  font-size: 1.5vw;
 }
 tr:hover {
   background-color: #2d2d2d;
@@ -48,7 +85,7 @@ table, td {
   border: 1px solid #00bfbf;
   font-family: 'Montserrat', sans-serif;
   padding: 8px;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 th {
@@ -56,7 +93,8 @@ th {
   font-family: 'Montserrat', sans-serif;
   color: #00bfbf;
   text-transform: uppercase;
-  
+  font-size: 1.5vw;
+
 }
 .filterDiv {
   border: 1px solid #00bfbf;
@@ -84,7 +122,6 @@ th {
   border: 3px solid #00bfbf;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 0.6em;
   background-color: white;
   text-transform: uppercase;
   margin: 5px;
